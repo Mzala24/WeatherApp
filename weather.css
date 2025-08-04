@@ -1,0 +1,125 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Layout */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #222;
+}
+
+/* Main Weather Box */
+.weather-box {
+  width: 350px;
+  padding: 20px;
+  background-color: #e0f7fa;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Weather App Section */
+.weatherApp {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  width: 100%;
+  
+}
+
+/* Weather Icon */
+#weatherIcon {
+  width: 80px;
+  margin-top: 10px;
+}
+
+/* Input and Buttons */
+input {
+  padding: 0.5rem;
+  margin: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 10px;
+  cursor: pointer;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  width: 350px;
+  padding: 20px;
+  background-color: #e0f7fa;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+/* ----------------------- */
+/* 🌙 Dark Mode Styles */
+/* ----------------------- */
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark .weather-box,
+body.dark .weatherApp,
+body.dark footer {
+  background: #1e1e1e;
+  color: #eee;
+  border: 2px solid #444;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark input,
+body.dark button {
+  background: #333;
+  color: #eee;
+  border: 1px solid #555;
+}
+
+body.dark input::placeholder {
+  color: #aaa;
+}
+
+body.dark .error {
+  color: #ff6b6b;
+}
