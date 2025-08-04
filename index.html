@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple projects practice for bignners.">
+    <meta name="keywords" content="Bignner projects, Weather app">
+    <meta name="author" content="Thabani Makhaye">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <button id="toggle-dark">🌙 Toggle Dark Mode</button>
+    <div class="weatherBox">
+        <header>
+            <h1>Mzala Weather Service</h1>
+            <p>Be always prepared for the day. In the search box below type your city name and get weather reports</p>
+            <input type="text" id="cityInput" placeholder="Enter city name..." />
+            <button onclick="getWeather()">Search</button>
+            
+        </header>
+        <button id="Location" onclick="getLocationWeather()">📍 Use My Location</button>
+
+        <main class="weatherApp">
+            
+            <section id="weatherResults">
+                <h2 id="cityName"></h2>
+                <p id="weatherDescription"></p>
+                <p><strong>Temp:</strong> <span id="temperature"></span>°C</p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind:</strong> <span id="wind-speed"></span> km/h</p>
+                <img id="weatherIcon" src="" alt="Weather Icon" />
+                <p id="error-message" class="error hidden"></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; Weather app of 2025, Made with love by MzalaDev. All rightd reserved.</p>
+    </footer>
+    <script src="weather.js"></script>
+</body>
+
+</html>
